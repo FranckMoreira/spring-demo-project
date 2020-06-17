@@ -5,7 +5,7 @@
         https://www.springframework.org/schema/beans/spring-beans.xsd">
 
     <bean id="myCoach" 
-        class="com.demo.TrackCoach">
+        class="com.demo.component.SoccerCoach">
     </bean>
 
 </beans>

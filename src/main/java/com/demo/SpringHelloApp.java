@@ -2,6 +2,8 @@ package com.demo;
 
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
+import com.demo.component.Coach;
+
 public class SpringHelloApp {
     
     public static void main(String[] args) {

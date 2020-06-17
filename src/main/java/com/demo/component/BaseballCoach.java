@@ -1,4 +1,4 @@
-package com.demo;
+package com.demo.component;
 
 public class BaseballCoach implements Coach {
 
