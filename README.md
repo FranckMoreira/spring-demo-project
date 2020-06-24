@@ -1,5 +1,6 @@
 # springframework-demo
-Esse projeto é um demo básico de aplicação do conceito de IoC usando springframework.
+Esse projeto é um demo básico de aplicação dos conceitos do springframework.
+
 
 Para compilar e executar o binário basta executar o arquivo start.sh
 

@@ -4,8 +4,15 @@
     xsi:schemaLocation="http://www.springframework.org/schema/beans
         https://www.springframework.org/schema/beans/spring-beans.xsd">
 
+    <!-- define the dependency -->
+    <bean id="myFortune"
+        class="com.demo.service.HappyFortuneService">
+    </bean>
+
     <bean id="myCoach" 
-        class="com.demo.component.SoccerCoach">
+        class="com.demo.component.BaseballCoach">
+        <!-- Set the constructor injection -->
+        <constructor-arg ref="myFortune" />
     </bean>
 
 </beans>
