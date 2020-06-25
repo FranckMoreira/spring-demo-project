@@ -10,9 +10,15 @@
     </bean>
 
     <bean id="myCoach" 
-        class="com.demo.component.BaseballCoach">
+        class="com.demo.component.TrackCoach">
         <!-- Set the constructor injection -->
         <constructor-arg ref="myFortune" />
+    </bean>
+
+    <bean id="cricketCoach"
+        class="com.demo.component.CricketCoach">
+        <!-- Set up setter injection -->
+        <property name="fortuneService" ref="myFortune" />
     </bean>
 
 </beans>

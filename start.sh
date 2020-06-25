@@ -42,4 +42,6 @@ javac -cp @.classpath.txt -d ./target/classes/ @sources.txt
 # Apaga os arquivos auxiliares
 rm sources.txt
 
-java -cp @.classpath.txt com.demo.SpringHelloApp
+# Selecione apenas um para executar por vez
+# java -cp @.classpath.txt com.demo.SpringHelloApp
+java -cp @.classpath.txt com.demo.SetterDemoApp
