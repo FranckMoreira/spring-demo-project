@@ -2,7 +2,7 @@ package com.demo;
 
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-import com.demo.component.Coach;
+import com.demo.component.CricketCoach;
 
 public class SetterDemoApp {
     
@@ -12,12 +12,16 @@ public class SetterDemoApp {
         ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
 
         // retrieve bean from psring container
-        Coach theCoach = context.getBean("cricketCoach", Coach.class);
+        CricketCoach theCoach = context.getBean("cricketCoach", CricketCoach.class);
 
         //call methods on the bean
         System.out.println(theCoach.getDailyWorkout());
         
         System.out.println(theCoach.getDailyFortune());
+
+        System.out.println(theCoach.getTeam());
+
+        System.out.println(theCoach.getEmailAddress());
 
         //close the context
         context.close();

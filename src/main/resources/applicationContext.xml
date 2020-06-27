@@ -17,8 +17,13 @@
 
     <bean id="cricketCoach"
         class="com.demo.component.CricketCoach">
+
         <!-- Set up setter injection -->
         <property name="fortuneService" ref="myFortune" />
+
+        <!-- Inject literal value -->
+        <property name="emailAddress" value="franck.c.moreira@gmail.com" />
+        <property  name="team" value="Got It" />
     </bean>
 
 </beans>
