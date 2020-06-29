@@ -15,7 +15,8 @@
     </bean>
 
     <bean id="myCoach" 
-        class="com.demo.component.TrackCoach">
+        class="com.demo.component.TrackCoach"
+        scope="prototype">
         <!-- Set the constructor injection -->
         <constructor-arg ref="myFortune" />
     </bean>
