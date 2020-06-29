@@ -44,4 +44,4 @@ rm sources.txt
 
 # Selecione apenas um para executar por vez
 # java -cp @.classpath.txt com.demo.SpringHelloApp
-java -cp @.classpath.txt com.demo.SetterDemoApp
+java -cp @.classpath.txt com.demo.BeanScopeDemoApp
