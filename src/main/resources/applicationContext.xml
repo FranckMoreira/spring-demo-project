@@ -1,12 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xmlns:context="http://www.springframework.org/schema/context"
     xsi:schemaLocation="http://www.springframework.org/schema/beans
-        https://www.springframework.org/schema/beans/spring-beans.xsd">
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <!-- Load the properties file: sport.properties -->
+    <context:property-placeholder location="sport.properties" /> 
 
     <!-- define the dependency -->
     <bean id="myFortune"
-        class="com.demo.service.HappyFortuneService">
+        class="com.demo.service.ForceFortuneService">
     </bean>
 
     <bean id="myCoach" 
@@ -22,8 +28,8 @@
         <property name="fortuneService" ref="myFortune" />
 
         <!-- Inject literal value -->
-        <property name="emailAddress" value="franck.c.moreira@gmail.com" />
-        <property  name="team" value="Got It" />
+        <property name="emailAddress" value="${foo.email}" />
+        <property  name="team" value="${foo.team}" />
     </bean>
 
 </beans>
